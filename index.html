@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Filter And Search</title>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet" />
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/7c78603360.js" crossorigin="anonymous"></script>
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <div id="search-container">
+            <input type="search" id="search-input" placeholder="Search menu here..." />
+            <button id="search">Search</button>
+        </div>
+        <div id="buttons">
+            <button class="button-value" onclick="filterProduct('all')">All</button>
+            <button class="button-value" onclick="filterProduct('Starter')">
+                Starter
+            </button>
+            <button class="button-value" onclick="filterProduct('Main-Dish')">
+                Main-Dish
+            </button>
+            <button class="button-value" onclick="filterProduct('Drinks')">
+                Drinks
+            </button>
+            <button class="button-value" onclick="filterProduct('Disert')">
+                Disert
+            </button>
+        </div>
+        <div id="products"></div>
+    </div>
+
+    <!-- footer start -->
+    <div class="footer">
+    <span><i class="fa fa-shopping-cart fa-2x"></i></span>
+    <a href="http://onnextweb.com">Design and developed by OnNextWeb</a>
+    <span class="next"><i class="fa-solid fa-forward fa-2x"></i></span>
+    </div>
+<!-- footer End -->
+
+<!-- pop up menu -->
+
+<div class="form-popup" id="myForm">
+    <form class="form-container">
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required>
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+    </form>
+</div>
+<script>
+    function openForm() {
+        document.getElementById("myForm").style.display = "block";
+    }
+
+    function closeForm() {
+        document.getElementById("myForm").style.display = "none";
+    }
+</script>
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>

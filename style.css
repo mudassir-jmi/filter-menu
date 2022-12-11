@@ -1,0 +1,231 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #f5f8ff;
+}
+
+.wrapper {
+    width: 95%;
+    margin: 0 auto;
+}
+
+#search-container {
+    margin: 1em 0;
+}
+
+#search-container input {
+    background-color: transparent;
+    width: 40%;
+    border-bottom: 2px solid #110f29;
+    padding: 1em 0.3em;
+}
+
+#search-container input:focus {
+    border-bottom-color: hwb(38 55% 0%);
+}
+
+#search-container button {
+    padding: 1em 2em;
+    margin-left: 1em;
+    background-color:hwb(38 55% 0%);
+    color: #ffffff;
+    border-radius: 5px;
+    margin-top: 0.5em;
+    cursor: pointer;
+}
+
+.button-value {
+    border: 2px solid hwb(38 55% 0%);
+    padding: 1em 2.2em;
+    border-radius: 3em;
+    background-color: transparent;
+    color: hwb(38 55% 0%);
+    cursor: pointer;
+}
+
+.active {
+    background-color: hwb(38 55% 0%);
+    color: #ffffff;
+}
+
+#products {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 1.5em;
+    padding: 2em 0;
+    border-radius: 10px;
+    /* box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3); */
+}
+
+.card {
+    background-color: #ffffff;
+    max-width: 18em;
+    margin-top: 1em;
+    padding: 1em;
+    border-radius: 5px;
+    /* box-shadow: 1em 2em 2.5em rgba(1, 2, 68, 0.08); */
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+}
+
+.image-container {
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    object-fit: contain;
+    height: 15em;
+}
+
+.container {
+    padding-top: 1em;
+    color: #110f29;
+}
+
+.container h5 {
+    font-weight: 500;
+}
+
+.hide {
+    display: none;
+}
+
+.cart {
+    width: 40px;
+    height: 30px;
+    cursor: pointer;
+    background-color: hwb(38 55% 0%);
+    float: right;
+    border-radius: 10px 0;
+    color: white;
+    justify-content: center;
+    display: flex;
+    margin: 6px;
+    font-size: 18px;
+}
+
+/* footer */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    text-align: center;
+    font-size: 18px;
+    background-color: hwb(38 55% 0%);
+    color: #fff;
+}
+.footer a {
+    text-decoration: none;
+    color: white;
+}
+.fa-shopping-cart {
+    margin-right: 200px;
+}
+.fa-forward {
+margin-left: 200px;
+}
+
+@media screen and (max-width: 400px) {
+    .footer {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .fa-forward {
+        margin-left: 260px;
+    }
+}
+@media screen and (max-width: 720px) {
+    img {
+        max-width: 100%;
+        object-fit: contain;
+        height: 10em;
+    }
+
+    .card {
+        max-width: 10em;
+        margin-top: 1em;
+    }
+
+    #products {
+        grid-template-columns: auto auto;
+        grid-column-gap: 1em;
+    }
+}
+
+/* pop up menu */
+.open-button {
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text],
+.form-container input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus,
+.form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+    background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover,
+.open-button:hover {
+    opacity: 1;
+}
