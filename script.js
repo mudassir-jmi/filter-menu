@@ -65,6 +65,7 @@ let products = {
     },
   ],
 };
+
 products.data[0].cart.onclick = openForm();
 for (let i of products.data) {
   //Create Card
@@ -162,3 +163,20 @@ window.onload = () => {
   document.getElementById("myForm").style.display = "none";
   filterProduct("all");
 };
+
+// cart button
+const Plus = document.querySelector(".plus"),
+min = document.querySelector(".min"),
+value = document.querySelector(".value");
+let a = 0;
+Plus.addEventListener("click", ()=>{
+  a++;
+  value.innerText = a;
+})
+
+min.addEventListener("click",()=> {
+  if(a > 1) {
+    a--;
+   value.innerText = a;
+  }
+})

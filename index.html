@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Product Filter And Search</title>
+    <title>Menu Filter And Search</title>
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet" />
     <!-- Font Awesome -->
@@ -34,31 +34,51 @@
         </div>
         <div id="products"></div>
     </div>
-
-    <!-- footer start -->
-    <div class="footer">
-    <span><i class="fa fa-shopping-cart fa-2x"></i></span>
-    <a href="http://onnextweb.com">Design and developed by OnNextWeb</a>
-    <span class="next"><i class="fa-solid fa-forward fa-2x"></i></span>
-    </div>
-<!-- footer End -->
+    <!-- select veg or non-veg -->
 
 <!-- pop up menu -->
 
 <div class="form-popup" id="myForm">
     <form class="form-container">
-        <label for="email"><b>Email</b></label>
+        <!-- <label for="email"><b>Email</b></label>
         <input type="text" placeholder="Enter Email" name="email" required>
 
         <label for="psw"><b>Password</b></label>
         <input type="password" placeholder="Enter Password" name="psw" required>
-        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+         -->
+         <div class="check">
+            <label for="">Quater:</label>
+            <input type="checkbox" class="check">
+            <span>$45</span>
+            <label for="">Half:</label>
+            <input type="checkbox" class="check"><br>
+            <span>$45</span>
+            <label for="">Full:</label>
+            <input type="checkbox" class="check"><br>
+            <span>$45</span>
+         </div>
+       
+
+        <div class="add">
+            <span class="min">-</span>
+            <span class="value">1</span>
+            <span class="plus">+</span>
+        </div>
+        <button type="button" class="btn cancel" onclick="closeForm()">Add Item</button>
     </form>
 </div>
+    <!-- footer start -->
+    <div class="footer">
+        <span><i class="fa fa-shopping-cart fa-2x"></i></span>
+        <a href="http://onnextweb.com">Design and developed by OnNextWeb</a>
+        <span class="next"><i class="fa-solid fa-forward fa-2x"></i></span>
+    </div>
+    <!-- footer End -->
 <script>
     function openForm() {
         document.getElementById("myForm").style.display = "block";
     }
+    // document.querySelector("#products").style = "none";
 
     function closeForm() {
         document.getElementById("myForm").style.display = "none";

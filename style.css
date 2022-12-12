@@ -131,6 +131,9 @@ img {
 .fa-forward {
 margin-left: 200px;
 }
+.footer span {
+    cursor: pointer;
+}
 
 @media screen and (max-width: 400px) {
     .footer {
@@ -178,15 +181,16 @@ margin-left: 200px;
     display: none;
     position: fixed;
     bottom: 0;
-    right: 15px;
+    right: 130px;
     border: 3px solid #f1f1f1;
     z-index: 9;
 }
 
 /* Add styles to the form container */
 .form-container {
+    position: sticky;
     max-width: 300px;
-    padding: 10px;
+    padding: 50px;
     background-color: white;
 }
 
@@ -211,11 +215,12 @@ margin-left: 200px;
 .form-container .btn {
     background-color: #04AA6D;
     color: white;
-    padding: 16px 20px;
+    padding: 10px 5px;
     border: none;
     cursor: pointer;
-    width: 100%;
-    margin-bottom: 10px;
+    width: 50%;
+    margin-bottom: -5px;
+    margin-left: 140px;
     opacity: 0.8;
 }
 
@@ -228,4 +233,44 @@ margin-left: 200px;
 .form-container .btn:hover,
 .open-button:hover {
     opacity: 1;
+}
+
+/* checkbox on card */
+.check {
+    /* display: block; */
+    margin-top: 15px;
+    /* margin-right: 50px; */
+}
+.check > span {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+/* incr or decr button */
+.add {
+    height: 30px;
+    /* min-width: 30px; */
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: flex-end; */
+    margin-right: 120px;
+    margin-top: 200px;
+    background:rgb(173, 163, 89);
+    /* border-radius: 12px; */
+}
+.add span {
+    width: 50%;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 100;
+    color: red;
+    cursor: pointer;
+}
+.add span.value {
+    font-size: 20px;
+    color: #000;
+    border-right: 2px solid rgba(0, 0, 0, 0.2);
+    border-left: 2px solid rgba(0, 0, 0, 0.2);
 }
