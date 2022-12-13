@@ -160,27 +160,28 @@ margin-left: 200px;
         grid-template-columns: auto auto;
         grid-column-gap: 1em;
     }
+    .select {
+        margin-top: 2em;
+    }
+    .button-value {
+       margin: 10px;
+    }
+    .form-container {
+        /* position: sticky; */
+        max-width: 300px;
+        padding: 100px;
+        /* background-color: white; */
+    }
 }
 
 /* pop up menu */
-.open-button {
-    background-color: #555;
-    color: white;
-    padding: 16px 20px;
-    border: none;
-    cursor: pointer;
-    opacity: 0.8;
-    position: fixed;
-    bottom: 23px;
-    right: 28px;
-    width: 280px;
-}
 
 /* The popup form - hidden by default */
 .form-popup {
     display: none;
     position: fixed;
-    bottom: 0;
+    /* bottom: 0; */
+    top: 0;
     right: 130px;
     border: 3px solid #f1f1f1;
     z-index: 9;
@@ -273,4 +274,17 @@ margin-left: 200px;
     color: #000;
     border-right: 2px solid rgba(0, 0, 0, 0.2);
     border-left: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+/* Select Menu Option */
+.select {
+   background:hwb(38 55% 0%);
+   color: #fff;
+   padding: 0.5em 1em;
+   border-radius: 5px;
+   font-size: 16px;
+   margin-left: 6em;
+}
+.select > option {
+    font-size: 16px;
 }

@@ -58,9 +58,16 @@ let products = {
     },
     {
       productName: "Salled",
-      category: "Starter",
+      category: "Veg",
       price: "49",
-      image: "img/cheesecurd.jpg",
+      image: "img/paneer.jpeg",
+      cart:"➕",
+    },
+    {
+      productName: "Salled",
+      category: "Non-Veg",
+      price: "49",
+      image: "img/chicken.png",
       cart:"➕",
     },
   ],
