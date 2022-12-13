@@ -57,14 +57,14 @@ let products = {
       cart:"➕",
     },
     {
-      productName: "Salled",
+      productName: "Panner",
       category: "Veg",
       price: "49",
       image: "img/paneer.jpeg",
       cart:"➕",
     },
     {
-      productName: "Salled",
+      productName: "Chicken",
       category: "Non-Veg",
       price: "49",
       image: "img/chicken.png",
